@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body > main > section{
+    width: 100%;
+    overflow-x: auto;
+}
+
+p{
+    font-size: 16px;
+}
+
+/* HEADER */
+header{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/marble-statue-of-greek-god-with-cornucopia-in-his-hands-generate-ai-free-photo.jpg);
+    background-size: cover;
+    background-position: center 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;align-content: center;
+    color:antiquewhite;
+}
+header h1{
+    font-size: 10vw;
+}
+header h2{
+    font-size: 6vw;
+}
+
+/* NAVBAR */
+nav{
+    background-color: #000;
+    position:relative;
+}
+
+/* MAIN */
+section h2{
+    border-bottom: solid gold 4px;
+}
+
+/* Portofolio */
+div.carousel-item, div.carousel-item img{
+    width: 100vw;
+    height: 30vh;
+    object-fit: cover;
+}
+span.carousel-control-prev-icon, span.carousel-control-next-icon{
+    background-color: rgb(0, 0, 0, 0.5);
+
+}
+span img#designLogo{
+    align-items: center;
+}
+section#contact>div.contact>a>img{
+    width: 19vw;
+}
+/* FOOTER */
+footer{
+    height: 20vh;
+    background-color: #000;
+}
+@media screen and (min-width:767px) {
+    p{
+        font-size: 18px;
+    }
+    section#services >span{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section#services > span>div.bg-body-secondary{
+        width: 25vw;
+
+    }
+    div.carousel-item,  div.carousel-item img{
+        height: 60vh;
+    }
+    section#contact > div.contact > a >img{
+        width: 10vw;
+    }
+}
+
+
+@media screen and (min-width:992px) {
+    ul.navbar-nav{
+        display: flex;
+        justify-content: end;
+    }
+    header{
+        width: auto;
+    }
+    header h1{
+    font-size: 7vw;
+    }
+    header h2{
+        font-size: 4vw;
+    }
+    section#contact > div.contact > a >img{
+        width: 5vw;
+    }
+}
