@@ -185,6 +185,7 @@ section#illustration > figure > img{
     object-fit: cover;
 }
 
+
 /* RESPONSIVE */
 @media screen and (min-width:767px) {
     nav.navbar > div.container-fluid > div.collapse  > ul.navbar-nav > li:nth-child(4){
@@ -218,9 +219,8 @@ section#illustration > figure > img{
 
 
 @media screen and (min-width:992px) {
-
-    header{
-        width: auto;
+    body{
+        overflow-x: hidden;
     }
     header h1{
         font-size: 7vw;
@@ -232,14 +232,20 @@ section#illustration > figure > img{
         display: flex;
         justify-content: end;
     }
+    nav{
+        max-width: 100vw;
+    }
     nav.navbar > div.container-fluid > div.collapse  > ul.navbar-nav > li:nth-child(4){
         display: flex;
+    }
+    main{
+        max-width: 100vw !important;
     }
     section#contact > div.contact > a >img{
         width: 5vw;
     }
     section#portfolio{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
     footer > div#body{
         display: flex;
